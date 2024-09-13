@@ -28,7 +28,7 @@
 </head>
 <body>
     <img id="bulb" src="./ON.png" alt="" class="center">
-    <button id="ToggleBtn" class="center btn">Turn On</button>
+    <button id="ToggleBtn" class="center btn">Turn OFF</button>
 
     <script>
         let btn = document.getElementById('ToggleBtn')
@@ -36,7 +36,7 @@
         btn.addEventListener('click',ToggleBulb)
         function ToggleBulb(e){
             if(btn.textContent.includes('On')){
-                bulb.src = "./OFF.png"       
+                bulb.src = "./ON.png"       
                 btn.textContent = "Turn Off"
             }
             else{
